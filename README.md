@@ -1,6 +1,6 @@
 # データセットの準備
 
-![BCCWJ](https://chunagon.ninjal.ac.jp/)、現代日本語書き言葉均衡コーパスを用いる。
+[BCCWJ](https://chunagon.ninjal.ac.jp/)、現代日本語書き言葉均衡コーパスを用いる。
 
 ## 検索条件
 
