@@ -3,7 +3,7 @@
 ```
 git lfs clone git@github.com:ogadra/adverb.git
 ```
-　でクローンするか、以下の手順に従ってデータセットを直接BCCWJからダウンロードしてください。
+でクローンするか、以下の手順に従ってデータセットを直接BCCWJからダウンロードしてください。
 
 # データセットの準備
 
@@ -52,3 +52,24 @@ git lfs clone git@github.com:ogadra/adverb.git
 キー: (語彙素読み="マサカ" AND 品詞 LIKE "副詞%")
   WITH OPTIONS tglKugiri="" AND tglBunKugiri=";" AND limitToSelfSentence="1" AND tglFixVariable="2" AND tglWords="500" AND unit="1" AND encoding="UTF-8" AND endOfLine="CRLF"
 ```
+
+# 実行環境
+adverb.py -> {
+    'Python': '3.8以上(32bit)',
+    '必要追加パッケージ': ['mecab', 'cabocha-python']
+    }
+makeGraph.py -> {
+    'Python': '3系',
+    '必要追加パッケージ': ['matplotlib', 'pandas']
+    }
+ 
+ # 実行方法
+ 1. adverb.pyでデータセットから年別データ(result.csv)を作成
+ 2. makeRate.pyでresult.csvから5年毎の対応率(result-rate.csv)を作成
+ 3. makeGraph.pyでresult-rate.csvからグラフ画像(imgs/graph.png)を作成
+ 
+ ![graph.png](imgs/graph.png "作成されたグラフ画像")
+ 
+ # その他ファイルの解説
+ - adverbList.json -> 分析する呼応の副詞のデータを入力する。自分でデータセットを用意する場合は要編集。adverb.pyで使用。
+ - exception.csv -> 呼応の関係が見られなかった文章のデータ。adverb.pyより作成。
