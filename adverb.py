@@ -23,7 +23,6 @@ def judge(sentence, adverb, attach):
             looking = len(chunks)
         # 目標の副詞が含まれていればIDを記録
 
-        # print(token.feature.split(','))
 
         if token.feature.split(',')[-3] in attach:
             attachIds.append(len(chunks))
@@ -46,10 +45,12 @@ def judge(sentence, adverb, attach):
     while looking != -1:
         if chunks[looking]['to'] in attachIds:
             return True
+            # 係り受け関係にある文節に目的のフレーズがある場合はTrueを返す
         else:
             looking = chunks[looking]['to']
+            # 係り受け関係にある文節に目的の単語がない場合、更に係り受け関係にある文節をチェックする
     return False
-    # 目標の副詞が含まれる文節のかかり先に目標の付属語が存在すればTrueを返す
+    # 目的のフレーズがなければFalseを返す
 
 def analysis(fileName, adverb, attach, result):
     corpus = open('./data/' + fileName + '.txt', encoding='utf-8').read().split('\n')
