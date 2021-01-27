@@ -1,27 +1,14 @@
 import matplotlib.pyplot as plt
-import pandas
+import pandas as pd
 import json
 
-with open('./result.csv', encoding='utf-8') as f:
-    reader = csv.reader(f)
-    data = [row for row in reader]
+rate = pd.read_csv('result-rate.csv', header=0, index_col=0, dtype='object')
+rate = rate.T
 
-fig = plt.figure()
-ax = fig.add_subplot(111)
+rate[:] = rate[:].astype(float)
 
 
-for i in range(1,len(data),2):
-    rate = []
-    for j in range(2,len(data[i])):
-        try:
-            rate.append(int(data[i][j]) / (int(data[i][j]) + int(data[i+1][j])))
-        except ZeroDivisionError:
-            if len(rate) == 0:
-                pass
-            else:
-                rate.append('')
-    if i == 1:
-        break
+plt.rcParams['font.family'] = 'Noto Sans CJK JP'
+rate.plot(subplots=True, sharex=True, sharey=True, layout=(4,3), figsize=(25,15))
 
-ax.plot(rate.dropna(how='any'))
-ax.legend()
+plt.savefig('imgs/graph.png')
