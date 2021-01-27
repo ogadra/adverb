@@ -45,11 +45,6 @@
     "fileName": "tatoe"
   },
   {
-    "adverb": ["ドウゾ"],
-    "attach": ["ください", "ほしい"],
-    "fileName": "douzo"
-  },
-  {
     "adverb": ["ゼヒ"],
     "attach": ["たい"],
     "fileName": "zehi"
