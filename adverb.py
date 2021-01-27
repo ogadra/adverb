@@ -94,7 +94,6 @@ if __name__ == '__main__':
     for i in data:
         result = analysis(i['fileName'], i['adverb'], i['attach'], result)
 
-    result = [list(x) for x in zip(*result)]
     with open('result.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerows(result)
