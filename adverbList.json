@@ -36,12 +36,12 @@
   },
   {
     "adverb": ["モシ"],
-    "attach": ["たら", "ても"],
+    "attach": ["たら", "ても", "しても", "したら", "ば", "とも"],
     "fileName": "moshi"
   },
   {
     "adverb": ["タトエ"],
-    "attach": ["ても"],
+    "attach": ["ても", "しても", "とも"],
     "fileName": "tatoe"
   },
   {
