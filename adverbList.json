@@ -1,0 +1,67 @@
+[
+  {
+    "adverb": ["ケッシテ"],
+    "attach": ["ない", "ぬ", "ん"],
+    "fileName": "kesshite"
+  },
+  {
+    "adverb": ["マッタク"],
+    "attach": ["ない", "ぬ", "ん"],
+    "fileName": "mattaku"
+  },
+  {
+    "adverb": ["ゼンゼン"],
+    "attach": ["ない", "ぬ", "ん"],
+    "fileName": "zenzen"
+  },
+  {
+    "adverb": ["オソラク"],
+    "attach": ["だろう", "う"],
+    "fileName": "osoraku"
+  },
+  {
+    "adverb": ["キット"],
+    "attach": ["だろう", "う"],
+    "fileName": "kitto"
+  },
+  {
+    "adverb": ["タブン"],
+    "attach": ["だろう", "う"],
+    "fileName": "tabun"
+  },
+  {
+    "adverb": ["ナゼ"],
+    "attach": ["か"],
+    "fileName": "naze"
+  },
+  {
+    "adverb": ["モシ"],
+    "attach": ["たら", "ても"],
+    "fileName": "moshi"
+  },
+  {
+    "adverb": ["タトエ"],
+    "attach": ["ても"],
+    "fileName": "tatoe"
+  },
+  {
+    "adverb": ["ドウゾ"],
+    "attach": ["ください", "ほしい"],
+    "fileName": "douzo"
+  },
+  {
+    "adverb": ["ゼヒ"],
+    "attach": ["たい"],
+    "fileName": "zehi"
+  },
+  {
+    "adverb": ["マルデ"],
+    "attach": ["ようだ"],
+    "fileName": "marude"
+  },
+  {
+    "adverb": ["マサカ"],
+    "attach": ["ない", "だろう"],
+    "fileName": "masaka"
+  }
+]
