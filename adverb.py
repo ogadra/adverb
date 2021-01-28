@@ -15,9 +15,10 @@ def judge(sentence, adverb, attach):
     for i in range(0, tree.size()):
         token = tree.token(i)
         text = token.surface if token.chunk else (text + token.surface)
+        # 文節で区切る
 
         toChunkId = token.chunk.link if token.chunk else toChunkId
-        # 文節で区切る
+        # かかり先をメモ
 
         if token.feature.split(',')[-1] in adverb and token.feature.split(',')[0] == "副詞":
             looking = len(chunks)
