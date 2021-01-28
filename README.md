@@ -74,7 +74,9 @@ makeGraph.py -> {
  4. regressionGraph.pyで「ゼンゼン」の対応率と回帰直線を含むグラフ(imgs/regression.png)を作成
  5. regressionScore.pyで「ゼンゼン」の対応率と回帰直線の係数、切片、決定係数を計算
  
+ 対応率のグラフ画像
  ![graph.png](imgs/graph.png "作成されたグラフ画像")
+ 
  
  # その他ファイルの解説
  - adverbList.json -> 分析する呼応の副詞のデータを入力する。自分でデータセットを用意する場合は要編集。adverb.pyで使用。
