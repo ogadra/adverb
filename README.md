@@ -56,10 +56,16 @@ adverb.py -> {
     'Python': '3.8以上(32bit)',
     '必要追加パッケージ': ['mecab', 'cabocha-python']
     }
+    
 makeGraph.py -> {
     'Python': '3系',
     '必要追加パッケージ': ['matplotlib', 'pandas']
     }
+ 
+ regression.py {
+     'Python': '3系',
+     '必要追加パッケージ': ['matplotlib', 'pandas', 'scikit-learn']
+ }
  
  # 実行方法
  1. adverb.pyでデータセットから年別データ(result.csv)を作成
