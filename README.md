@@ -83,4 +83,4 @@ makeGraph.py -> {
 |Anaconda Python | 3.9.1(32bit)|Anaconda Python | 3.9.1(64bit)|
 |cabocha-python | 0.69.1|matplotlib | 3.3.2 |
 |mecab | 0.996.2| pandas | 1.2.1|
-|| scikit-learn | 0.23.2|
+||| scikit-learn | 0.23.2|
