@@ -71,12 +71,16 @@ makeGraph.py -> {
  1. adverb.pyでデータセットから年別データ(result.csv)を作成
  2. makeRate.pyでresult.csvから5年毎の対応率(result-rate.csv)を作成
  3. makeGraph.pyでresult-rate.csvからグラフ画像(imgs/graph.png)を作成
+ 4. regressionGraph.pyで「ゼンゼン」の対応率と回帰直線を含むグラフ(imgs/regression.png)を作成
+ 5. regressionScore.pyで「ゼンゼン」の対応率と回帰直線の係数、切片、決定係数を計算
  
  ![graph.png](imgs/graph.png "作成されたグラフ画像")
  
  # その他ファイルの解説
  - adverbList.json -> 分析する呼応の副詞のデータを入力する。自分でデータセットを用意する場合は要編集。adverb.pyで使用。
  - exception.csv -> 呼応の関係が見られなかった文章のデータ。adverb.pyより作成。
+ - regressionScores.py -> 全ての副詞に対する対応率と回帰直線の係数、切片、決定係数を計算。コンソールに出力。 
+
 
 # 分析環境
 レポジトリ作成者は以下の分析環境で分析した。
