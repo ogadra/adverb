@@ -9,6 +9,7 @@ rate[:] = rate[:].astype(float)
 
 
 plt.rcParams['font.family'] = 'Noto Sans CJK JP'
-rate.plot(subplots=True, sharex=True, sharey=True, layout=(4,3), figsize=(25,15))
+plt.rcParams["font.size"] = 18
+rate.plot(subplots=True, sharex=True, sharey=True, layout=(6,2), figsize=(15,20))
 
 plt.savefig('imgs/graph.png')
