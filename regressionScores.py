@@ -10,23 +10,26 @@ rate[:] = rate[:].astype(float)
 
 rate['year'] = list(range(1972,2008,5))
 
+def regressionCalc(x, y, col):
+    lr.fit(x,y)
+    print(col)
+    print('係数 =', lr.coef_[0]) # 説明変数の係数を出力
+    print('切片 =', lr.intercept_) # 切片を出力
+    print('決定係数 =', lr.score(X,Y))
+    print('------------------------------------')
+    return True
 
 for col, target in rate.iteritems():
-    # plt.plot(rate.year, target)
+    if col == 'year':
+        continue
 
     lr = LinearRegression()
     Y = target.values
     try:
         X = rate.year.values.reshape(-1, 1)
-        lr.fit(X,Y)
-        print(col, lr.score(X,Y))
+        regressionCalc(X, Y, col)
     except ValueError:
         # 1970-1974が欠損値となっている単語の計算
         X = rate.year[1:].values.reshape(-1, 1)
         Y = target[1:].values
-        lr.fit(X,Y)
-        print(col, lr.score(X,Y))
-        pass
-
-# plt.plot(rate.year,lr.predict(X), color='red')
-# plt.show()
+        regressionCalc(X, Y, col)
