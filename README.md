@@ -75,6 +75,7 @@ makeGraph.py -> {
  5. regressionScore.pyで「ゼンゼン」の対応率と回帰直線の係数、切片、決定係数を計算
  
  対応率のグラフ画像
+ 
  ![graph.png](imgs/graph.png "作成されたグラフ画像")
  
  
