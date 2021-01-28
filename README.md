@@ -72,4 +72,15 @@ makeGraph.py -> {
  
  # その他ファイルの解説
  - adverbList.json -> 分析する呼応の副詞のデータを入力する。自分でデータセットを用意する場合は要編集。adverb.pyで使用。
- - exception.csv -> 呼応の関係が見られなかった文章のデータ。adverb.pyより作成。
+った文章のデータ。adverb.pyより作成。 - exception.csv -> 呼応の関係が見られなか
+
+# 分析環境
+レポジトリ作成者は以下の分析環境で分析した。
+分析環境
+
+|係り受け解析||統計||
+|--:|--:|--:|--:|
+|Anaconda Python | 3.9.1(32bit)|Anaconda Python | 3.9.1(64bit)|
+|cabocha-python | 0.69.1|matplotlib | 3.3.2 |
+|mecab | 0.996.2| pandas | 1.2.1|
+|| scikit-learn | 0.23.2|
