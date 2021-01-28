@@ -50,11 +50,6 @@
     "fileName": "zehi"
   },
   {
-    "adverb": ["マルデ"],
-    "attach": ["ようだ"],
-    "fileName": "marude"
-  },
-  {
     "adverb": ["マサカ"],
     "attach": ["ない", "だろう"],
     "fileName": "masaka"
