@@ -47,8 +47,6 @@ git lfs clone git@github.com:ogadra/adverb.git
   WITH OPTIONS tglKugiri="" AND tglBunKugiri=";" AND limitToSelfSentence="1" AND tglFixVariable="2" AND tglWords="500" AND unit="1" AND encoding="UTF-8" AND endOfLine="CRLF";
 キー: (語彙素読み="ゼヒ" AND 品詞 LIKE "副詞%")
   WITH OPTIONS tglKugiri="" AND tglBunKugiri=";" AND limitToSelfSentence="1" AND tglFixVariable="2" AND tglWords="500" AND unit="1" AND encoding="UTF-8" AND endOfLine="CRLF";
-キー: (語彙素読み="マルデ" AND 品詞 LIKE "副詞%")
-  WITH OPTIONS tglKugiri="" AND tglBunKugiri=";" AND limitToSelfSentence="1" AND tglFixVariable="2" AND tglWords="500" AND unit="1" AND encoding="UTF-8" AND endOfLine="CRLF";
 キー: (語彙素読み="マサカ" AND 品詞 LIKE "副詞%")
   WITH OPTIONS tglKugiri="" AND tglBunKugiri=";" AND limitToSelfSentence="1" AND tglFixVariable="2" AND tglWords="500" AND unit="1" AND encoding="UTF-8" AND endOfLine="CRLF"
 ```
